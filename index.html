@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Film Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="public/style.css" />
+    <script defer src="https://kit.fontawesome.com/e918d10e90.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="./public/helpers.js"></script>
+    <script defer type="module" src="./public/script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 id="appTitle">🍿Film Finder🍿</h1>
+    </header>
+
+    <!-- Main -->
+    <main id="appBody">
+      <form id="genreForm">
+        <label>Choose a genre:</label>
+        <select name="genres" id="genres"></select>
+      </form>
+      <button id="playBtn">Let's Play!</button>
+      <div id="movieBanner" hidden>
+        <div id="movieInfo">
+          <div id="moviePoster"></div>
+          <div id="movieText"></div>
+        </div>
+        <div id="likeOrDislikeBtns">
+          <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="main-footer">
+        <div class="logoinfo" data-aos="fade-up">
+          <h1>Film Finder</h1>
+          <p>By Rijal Ghodi</p>
+
+          <div class="contact-details">
+            <h1>Contact Us</h1>
+            <li>
+              <div class="fa fa-envelope"></div>
+              <a href="mailto:rijalghodi10l@gmail.com">rijalghodi10@gmail.com</a>
+            </li>
+          </div>
+        </div>
+        <div class="com" data-aos="fade-up">
+          <h1>About</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="info" data-aos="fade-up">
+          <h1>Other Platforms</h1>
+          <div class="sociallogos">
+            <div class="logobox">
+              <a href="https://www.instagram.com/garis.mula/?hl=id" class="fa fa-instagram"></a>
+              <a href="https://www.linkedin.com/in/rijal-ghodi/" class="fa fa-linkedin"></a>
+              <a href="https://github.com/rijalghodi" class="fa fa-github"></a>
+              <a href="https://codepen.io/rijalghodi" class="fa fa-codepen"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">© Rijal Ghodi 2022 All Rights Reserved</div>
+    </footer>
+  </body>
+</html>
