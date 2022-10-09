@@ -10,6 +10,7 @@ const populateGenreDropdown = (genres) => {
     let option = document.createElement("option");
     option.value = genre.id;
     option.text = genre.name;
+    option.className = "genre-options";
     select.appendChild(option);
   }
 };
